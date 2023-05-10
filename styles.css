@@ -1,0 +1,21 @@
+body {
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media(max-width: 425px) {
+    body {
+        overflow: hidden;
+    }
+
+    canvas {
+        width: 100%;
+    }
+}
