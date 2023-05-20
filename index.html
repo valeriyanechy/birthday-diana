@@ -8,7 +8,96 @@
     <title>Birthday Diana 21</title>
 </head>
 <body>
-    <canvas id="c"></canvas>
-    <script src="./script.js"></script>
+	<div class="container">
+		<div class="block">
+			<div class="column1">
+				<img src="./ferxxo.jpg" alt="">
+			</div>
+			<div class="column2">
+				<div class="col2">
+					<p style="font-size: 18px;">7 de julio</p>
+					<h1 style="font-size: 50px;">FEID<br>FERXXO</h1>
+					<p style="font-size: 18px;">Auditorio Marina Sur, Valencia</p>
+				</div>
+			</div>
+			<div class="column3">
+				<div class="col3">
+					<p>Hora: <b>21:00h</b></p>
+					<p>Ticket: <b>#22052002</b></p>
+					<p>Para: <b>DIANA NECHYPORUK</b></p>
+					<img src="./ferxxxo.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+		    							0 1 0 0 0
+		    							0 0 1 0 0
+		    							0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<!-- <div class="ticket">
+	<div class="left">
+		<div class="image">
+			<p class="admit-one">
+				<span>ADMIT ONE</span>
+				<span>ADMIT ONE</span>
+				<span>ADMIT ONE</span>
+			</p>
+			<div class="ticket-number">
+				<p>
+					#22022002
+				</p>
+			</div>
+		</div>
+		<div class="ticket-info">
+			<p class="date">
+				<span>VIERNES</span>
+				<span class="june-29">7 DE JULIO</span>
+				<span>2023</span>
+			</p>
+			<div class="show-name">
+				<h1>Ferxxo</h1>
+				<h2>Feid</h2>
+			</div>
+			<div class="time">
+				<p>21:00 <span>hasta</span> ni idea</p>
+			</div>
+			<p class="location"><span>Auditorio Marina Sur</span>
+				<span class="separator"><i class="far fa-smile"></i></span><span>Valencia</span>
+			</p>
+		</div>
+	</div>
+	<div class="right">
+		<p class="admit-one">
+			<span>ADMIT ONE</span>
+			<span>ADMIT ONE</span>
+			<span>ADMIT ONE</span>
+		</p>
+		<div class="right-info-container">
+			<div class="show-name">
+				<h1>Ferxxo</h1>
+			</div>
+			<div class="time">
+				<p>21:00 <span>hasta</span> ni idea</p>
+			</div>
+			<p class="ticket-number">
+				#22052002
+			</p>
+		</div>
+	</div>
+</div> -->
+    <script src="./script.js"></script>   
 </body>
 </html>

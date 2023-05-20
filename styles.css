@@ -1,21 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
 body {
+    margin: 0px;
     overflow: hidden;
-    background-color: #fff;
-    margin: 0 auto;
+    padding: 50px 0;
 }
 
-canvas{
-    position: absolute;
+#container {
+    padding: 100px 0;
+    margin: auto;
+    width: 100vw;
+    height: 100%;
     top: 0;
-    left: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+    text-align: center;
+    user-select: none;
 }
 
 @media(max-width: 425px) {
-    body {
-        overflow: hidden;
+
+    #container {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    canvas {
-        width: 100%;
+    #text1, #text2 {
+        width: 400px !important;
+        font-size: 70px;
     }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: #1c1b1b;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    flex-direction: row;
+    background-color: #fff;
+    height: 100%;
+    box-shadow: rgba(52, 255, 55, 0.508) 0px 5px 15px;
+}
+
+.column1 {
+    width: 30%;
+    border-right: 1px solid #686767;
+}
+
+.column1 img {
+    width: 100%;
+}
+
+.column2 {
+    width: 40%;
+    border-right: 1px solid #686767;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.col2 {
+    height: 100%;
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.col2 p, h1 {
+    padding: 30px 0
+}
+
+.column3 {
+    width: 30%;
+}
+
+.col3 {
+    height: 100%;
+    color: #000;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.col3 p {
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.col3 img {
+    padding-top: 56px;
+    width: 100%;
 }
